@@ -1,0 +1,90 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 115px;
+    width: 100%;
+  
+    }
+  
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+    z-index:500;
+  }
+  
+  
+  
+  .nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 0;
+    position: relative;
+  }
+  
+  .p-about,
+  .p-projects,
+  .p-education,
+  .p-extracurriculars
+   {
+    font-size: 20px;
+    font-family: Source Code Pro, Arial;
+    color: white;
+    padding: 5px 6px 5px 6px;
+    transition: background-color 0.15s;
+    transition: color 0.15s;
+    transition: padding 0.6s;
+    text-decoration: none;
+  }
+  
+  
+  .p-about:hover,
+  .p-projects:hover,
+  .p-education:hover,
+  .p-extracurriculars:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 40px 5px 40px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .p-my-name{
+    font-size: 35px;
+    font-family: Source Code Pro, Arial;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+  }
+  
+  .p-my-name:hover{
+    cursor: pointer;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  
+  @media(max-width:768px){
+    .hamburger{
+      display: block;
+      position: absolute;
+      left: 80%;
+      top: 13%;
+      width: 100%;
+    }
+  
+  
+  
+  }
